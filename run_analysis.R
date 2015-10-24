@@ -54,8 +54,4 @@ SubAct <- TT %>% group_by(Subject,Activity) %>% summarize_each(funs(mean), match
 names(SubAct) <- featHold
 
 # Write resultent frame to file
-<<<<<<< HEAD
 write.table(SubAct, file = "ProjectData.txt", row.name = FALSE)
-=======
-write.table(SubAct, file = "ProjectData.txt")
->>>>>>> e29229f611993eb7aeb72928fa69b17d728bd315
